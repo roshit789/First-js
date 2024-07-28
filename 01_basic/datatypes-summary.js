@@ -12,7 +12,7 @@ let userEmail;  //undefined
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 //bigInt
 const bigNumber = 123123n 
@@ -37,4 +37,35 @@ const myFuction = function(){
 }
 
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive) and Heap(Non- primitive) Memory
+
+// example of stack -copy milx
+
+let myYoutubeName = "Hello@gmail.com"
+
+let anotherName = myYoutubeName
+anotherName = "roshit@gmail.com"
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+// Heap --kunai value rakhin reference milx (Reference means actually j ...
+// pani change and update garinx orginal value vitrai garin)
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@npl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "roshit@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
